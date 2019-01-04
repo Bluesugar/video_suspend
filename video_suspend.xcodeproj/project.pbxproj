@@ -15,6 +15,7 @@
 		0405EFC721DF479C0053B6A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0405EFC621DF479C0053B6A3 /* main.m */; };
 		0405EFD121DF479C0053B6A3 /* video_suspendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0405EFD021DF479C0053B6A3 /* video_suspendTests.m */; };
 		0405EFDC21DF479C0053B6A3 /* video_suspendUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0405EFDB21DF479C0053B6A3 /* video_suspendUITests.m */; };
+		0405EFEB21DF48E40053B6A3 /* touchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0405EFEA21DF48E40053B6A3 /* touchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		0405EFD721DF479C0053B6A3 /* video_suspendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = video_suspendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0405EFDB21DF479C0053B6A3 /* video_suspendUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = video_suspendUITests.m; sourceTree = "<group>"; };
 		0405EFDD21DF479C0053B6A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0405EFE921DF48E40053B6A3 /* touchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = touchView.h; sourceTree = "<group>"; };
+		0405EFEA21DF48E40053B6A3 /* touchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = touchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				0405EFB821DF479A0053B6A3 /* AppDelegate.m */,
 				0405EFBA21DF479A0053B6A3 /* ViewController.h */,
 				0405EFBB21DF479A0053B6A3 /* ViewController.m */,
+				0405EFE921DF48E40053B6A3 /* touchView.h */,
+				0405EFEA21DF48E40053B6A3 /* touchView.m */,
 				0405EFBD21DF479A0053B6A3 /* Main.storyboard */,
 				0405EFC021DF479C0053B6A3 /* Assets.xcassets */,
 				0405EFC221DF479C0053B6A3 /* LaunchScreen.storyboard */,
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0405EFEB21DF48E40053B6A3 /* touchView.m in Sources */,
 				0405EFBC21DF479A0053B6A3 /* ViewController.m in Sources */,
 				0405EFC721DF479C0053B6A3 /* main.m in Sources */,
 				0405EFB921DF479A0053B6A3 /* AppDelegate.m in Sources */,
@@ -435,14 +441,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LA78A3696S;
 				INFOPLIST_FILE = video_suspend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "GN.video-suspend";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TELive;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -451,14 +460,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LA78A3696S;
 				INFOPLIST_FILE = video_suspend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "GN.video-suspend";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TELive;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
